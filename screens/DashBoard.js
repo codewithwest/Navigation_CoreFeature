@@ -3,12 +3,16 @@ import { Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+import BackScreen from './BackScreen';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Feed from './DashBoard/Feed'
 import Profile from './DashBoard/Profile'
 import Notifications from './DashBoard/Notifications'
 
+
 const Stack = createNativeStackNavigator()
+
+
 
 const Tab = createBottomTabNavigator();
 
