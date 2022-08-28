@@ -1,9 +1,11 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
+const windowWidth = Dimensions.get('window').width;
+const windowHeight = Dimensions.get('window').height;
 
 export default StyleSheet.create({
     container: {
         
-        paddingTop:10,
+        paddingTop:windowHeight/4.2,
         alignItems: 'center',
         justifyContent:'center',
         
@@ -14,7 +16,7 @@ export default StyleSheet.create({
 
     },
     logo: {
-        borderRadius:100,
+        
         height: 68,
         width: 68,
         alignSelf: "center",
